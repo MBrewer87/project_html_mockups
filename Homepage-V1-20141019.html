@@ -24,7 +24,8 @@
 
     <div class="container">
 
-        <div style="background:lightblue !important" class="jumbotron">
+
+        <div class="jumbotron">
           <h1>Earn Your Beer (Logo To Go Here)</h1>
           <p>Vanquishing the beer belly since 2014</p>
           <!-- Create line of repeating beer icons -->
@@ -53,132 +54,60 @@
         </div>
 
         <div class="row">
-            <div style="height:580px !important" class="col-lg-5 well col-lg-offset-1">
+
+            <div class="col-lg-5 well col-lg-offset-1">
+              <div class="constantboxheight">
                 <h3 class="text-center"> <strong> <u> Enter Your Exercise </u> </strong> </h3>
-
-            <form class="form-horizontal" action="http://www.google.com">
-                <div class="form-group">
-                    <label for="exercise_name" class="col-sm-2 control-label">Exercise Name</label>
-                    <div class="col-xs-9">
-                      <input name="exercise_name" type="text" id="exercise_name" class="form-control">
-                    </div>
-                </div>
-
-                  <div class="form-group">
-                    <label for="exercise_type" class="col-sm-2 control-label">Exercise Type</label>
-                    <div class="col-sm-9">
-                      <select name="exercisetype" id="exercise_type" class="form-control">
-                        <option value="1">Running</option>
-                        <option value="4">Bicycling</option>
-                        <option value="3">Weightlifting</option>
-                        <option value="6">Walking</option>
-                      </select>
-                    </div>
-                  </div>
-
-                    <div class="form-group">
-                    <label for="exercise_intensity" class="col-sm-2 control-label">Intensity</label>
-                    <div class="col-sm-5">
-                      <select name="exerciseintensity" id="exercise_intensity" class="form-control">
-                        <option value="11">Light</option>
-                        <option value="14">Moderate</option>
-                        <option value="13">High</option>
-                        <option value="16">Very High</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="exercise_duration" class="col-sm-2 control-label">Duration (Mins)</label>
-                    <div class="col-sm-4">
-                      <input name="duration" type="number" id="exercise_duration" class="form-control">
-                    </div>
-                  </div>
-
-                  <div class="panel panel-default">
-                    <div class="panel-body">
-                         <h4> <strong> Calories Burned: 365 </strong> </h4>
-                    <!-- NOTE: This value is static for now until I learn how to automate it! -->
-                    </div>
-                   </div>
-
-                  <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                      <input type="submit" value="Save Exercise" class="btn btn-success">
-                      or
-                      <input type="submit" value="Save As Favorite" class="btn btn-info">
-                      or
-                      <a href="http://www.google.com">Cancel</a>
-                    </div>
-                  </div>
-            </form>
-
-            </div>
-
-            <div style="height:580px !important" class="col-lg-5 well col-lg-offset-1">
-                <h3 class="text-center"> <strong> <u> Enter Your Beer </u> </strong> </h3>
-                <p> </p>
 
                 <form class="form-horizontal" action="http://www.google.com">
                     <div class="form-group">
-                        <label for="beer_name" class="col-sm-2 control-label">Beer Name</label>
+                        <label for="exercise_name" class="col-sm-2 control-label">Exercise Name</label>
                         <div class="col-xs-9">
-                          <input name="beername" type="text" id="beer_name" class="form-control">
+                          <input name="exercise_name" type="text" id="exercise_name" class="form-control">
                         </div>
                     </div>
 
                       <div class="form-group">
-                        <label for="beer_type" class="col-sm-2 control-label">Beer Type</label>
+                        <label for="exercise_type" class="col-sm-2 control-label">Exercise Type</label>
                         <div class="col-sm-9">
-                          <select name="beertype" id="beer_type" class="form-control">
-                            <option value="21">Lager</option>
-                            <option value="24">Pale Ale</option>
-                            <option value="23">IPA</option>
-                            <option value="26">Stout</option>
-                            <option value="27">Brown Ale</option>
-                            <option value="28">Sour Ale</option>
+                          <select name="exercisetype" id="exercise_type" class="form-control">
+                            <option value="1">Running</option>
+                            <option value="4">Bicycling</option>
+                            <option value="3">Weightlifting</option>
+                            <option value="6">Walking</option>
+                          </select>
+                        </div>
+                      </div>
+
+                        <div class="form-group">
+                        <label for="exercise_intensity" class="col-sm-2 control-label">Intensity</label>
+                        <div class="col-sm-5">
+                          <select name="exerciseintensity" id="exercise_intensity" class="form-control">
+                            <option value="11">Light</option>
+                            <option value="14">Moderate</option>
+                            <option value="13">High</option>
+                            <option value="16">Very High</option>
                           </select>
                         </div>
                       </div>
 
                       <div class="form-group">
-                        <label for="num_consumed" class="col-sm-2 control-label">Number Consumed</label>
+                        <label for="exercise_duration" class="col-sm-2 control-label">Duration (Mins)</label>
                         <div class="col-sm-4">
-                          <input name="numconsumed" type="number" id="num_consumed" class="form-control">
-                        </div>
-                      </div>
-
-                      <div class="form-group">
-                        <label for="star_rating" class="col-sm-2 control-label">Star Rating</label>
-                        <div class="col-sm-9">
-                          <select name="starrating" id="star_rating" class="form-control">
-                            <option value="71">*</option>
-                            <option value="72">**</option>
-                            <option value="73">***</option>
-                            <option value="74">****</option>
-                            <option value="75">*****</option>
-                            <!-- Would love to replace these with Font Awesome star icons... when I tested this, it appears as if Font Awesome fonts do not display properly in drop-down menus. -->
-                          </select>
-                        </div>
-                    </div>
-
-                      <div class="form-group">
-                        <label for="num_consumed" class="col-sm-2 control-label">Photo (Optional)</label>
-                        <div class="col-sm-9">
-                          <input name="image_url" type="file" id="picture" class="form-control">
+                          <input name="duration" type="number" id="exercise_duration" class="form-control">
                         </div>
                       </div>
 
                       <div class="panel panel-default">
                         <div class="panel-body">
-                             <h4> <strong> Calories Gained: 300 </strong> </h4>
+                             <h4> <strong> Calories Burned: 365 </strong> </h4>
                         <!-- NOTE: This value is static for now until I learn how to automate it! -->
                         </div>
                        </div>
 
                       <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                          <input type="submit" value="Save Beer" class="btn btn-success">
+                          <input type="submit" value="Save Exercise" class="btn btn-success">
                           or
                           <input type="submit" value="Save As Favorite" class="btn btn-info">
                           or
@@ -188,7 +117,83 @@
                 </form>
 
             </div>
-        </div>
+          </div>
+
+            <div class="col-lg-5 well col-lg-offset-1">
+              <div class="constantboxheight">
+                <h3 class="text-center"> <strong> <u> Enter Your Beer </u> </strong> </h3>
+                <p> </p>
+
+                  <form class="form-horizontal" action="http://www.google.com">
+                      <div class="form-group">
+                          <label for="beer_name" class="col-sm-2 control-label">Beer Name</label>
+                          <div class="col-xs-9">
+                            <input name="beername" type="text" id="beer_name" class="form-control">
+                          </div>
+                      </div>
+
+                        <div class="form-group">
+                          <label for="beer_type" class="col-sm-2 control-label">Beer Type</label>
+                          <div class="col-sm-9">
+                            <select name="beertype" id="beer_type" class="form-control">
+                              <option value="21">Lager</option>
+                              <option value="24">Pale Ale</option>
+                              <option value="23">IPA</option>
+                              <option value="26">Stout</option>
+                              <option value="27">Brown Ale</option>
+                              <option value="28">Sour Ale</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="num_consumed" class="col-sm-2 control-label">Number Consumed</label>
+                          <div class="col-sm-4">
+                            <input name="numconsumed" type="number" id="num_consumed" class="form-control">
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="star_rating" class="col-sm-2 control-label">Star Rating</label>
+                          <div class="col-sm-9">
+                            <select name="starrating" id="star_rating" class="form-control">
+                              <option value="71">*</option>
+                              <option value="72">**</option>
+                              <option value="73">***</option>
+                              <option value="74">****</option>
+                              <option value="75">*****</option>
+                              <!-- Would love to replace these with Font Awesome star icons... when I tested this, it appears as if Font Awesome fonts do not display properly in drop-down menus. -->
+                            </select>
+                          </div>
+                      </div>
+
+                        <div class="form-group">
+                          <label for="num_consumed" class="col-sm-2 control-label">Photo (Optional)</label>
+                          <div class="col-sm-9">
+                            <input name="image_url" type="file" id="picture" class="form-control">
+                          </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                               <h4> <strong> Calories Gained: 300 </strong> </h4>
+                          <!-- NOTE: This value is static for now until I learn how to automate it! -->
+                          </div>
+                         </div>
+
+                        <div class="form-group">
+                          <div class="col-sm-offset-2 col-sm-10">
+                            <input type="submit" value="Save Beer" class="btn btn-success">
+                            or
+                            <input type="submit" value="Save As Favorite" class="btn btn-info">
+                            or
+                            <a href="http://www.google.com">Cancel</a>
+                          </div>
+                        </div>
+                  </form>
+                </div>
+              </div>
+            </div>
 
         <div class="row">
             <div class="col-xs-5 col-xs-offset-1 panel panel-default">
@@ -260,13 +265,14 @@
             </div>
 
             </div>
+              <div class="row">
+              <footer> Product of Mike Brewer, 2014 (His First Website!) </footer>
+              </div>
+              <div class="row">
+              <p> </p>
+              </div>
         </div>
-        <div class="row">
-            <div class="col-xs-1"></div>
-            <div class="col-xs-4"></div>
-            <div class="col-xs-2"></div>
-            <div class="col-xs-4"></div>
-            <div class="col-xs-1"></div>
+
 
 </body>
 </html>

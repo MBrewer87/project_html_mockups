@@ -10,3 +10,10 @@ body {
 
 */
 
+.jumbotron {
+  background-color: lightblue;
+}
+
+.constantboxheight {
+  height:580px
+}
